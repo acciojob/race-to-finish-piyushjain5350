@@ -3,7 +3,7 @@ const output=document.getElementById("output");
 
 for(let i=1;i<=5;i++){
 	promises.push(
-		new promise((resolve,reject)=>{
+		new Promise(resolve=>{
 			setTimeout(()=>{
 				resolve(i)
 			},1000*i)
